@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    /* background-color: darkgray; */
+    background-color: darkgray;
 }
 
 :root{
@@ -86,6 +86,7 @@ p{
 .column{
     flex-direction: column;
 }
+
 /* jumbotron and elements */
 
 #jumbotron{
@@ -327,3 +328,18 @@ p{
 
 #try_button{
 }
+
+/* question section */
+
+
+/* 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; 
+    width:50%;
+    min-height: 500px;
+    margin-bottom: 7rem;
+}
+
+*/
