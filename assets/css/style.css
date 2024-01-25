@@ -76,18 +76,14 @@ p{
 .container{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between; 
+    align-content: center; 
     width:50%;
     min-height: 500px;
+    margin-bottom: 7rem;
 }
 
 .column{
     flex-direction: column;
-}
-
-.margin{
-    margin-bottom: 7rem;
 }
 /* jumbotron and elements */
 
@@ -98,6 +94,7 @@ p{
     justify-content: center;
     width:100vw;
     height:550px;
+    margin-bottom: 7rem;
     background-color: var(--jumbotron);
 }
 
@@ -195,6 +192,10 @@ p{
 
 /* partner section */
 
+.partner{
+    justify-content: space-between; 
+}
+
 #partner_image{
     display: flex;
     flex-grow:1;
@@ -222,4 +223,19 @@ p{
     max-width: 40%;
     padding:8px;
     background-color: transparent;
+}
+
+/* operation section */
+
+#operation_cards{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%
+}
+
+.op_card{
+    display: flex;
+    flex-wrap: wrap;
+    width:33%;
+    height:200px;
 }
