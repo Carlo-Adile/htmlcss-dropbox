@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    background-color: darkgray;
+    /* background-color: darkgray; */
 }
 
 :root{
@@ -261,7 +261,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     width:100%;
-    min-height: 500px;
+    height: 500px;
     margin-bottom: 7rem;
 }
 
@@ -269,20 +269,42 @@ p{
     display: flex;
     flex-wrap: wrap;
     width:100%;
+    height:100%;
+    margin:0 auto;
 }
 
-.smaller{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow:1;
-}
-
-.bigger{
+.grid{
     display: flex;
     flex-wrap: wrap;
     flex-grow:1;
 }
 
 #brand1{
+    width:50%;
+    height:50%;
     background-color: red;
+}
+
+#brand2{
+    width:50%;
+    height:50%;
+    background-color: blue;
+}
+
+#brand3{
+    width:50%;
+    height:50%;
+    background-color: yellow;
+}
+
+#brand4{
+    width:50%;
+    height:50%;
+    background-color: green;
+}
+
+#brand5{
+    width:100%;
+    height:100%;
+    background-color: cyan;
 }
