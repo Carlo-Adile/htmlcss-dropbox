@@ -262,7 +262,6 @@ p{
     flex-wrap: wrap;
     width:100%;
     height: 500px;
-    margin-bottom: 7rem;
 }
 
 #brand_grid{
@@ -307,4 +306,24 @@ p{
     width:100%;
     height:100%;
     background-color: cyan;
+}
+
+/* try section */
+
+#container_try{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+    height: 300px;
+    margin-bottom: 7rem;
+    background-color: var(--jumbotron);
+}
+
+#try_description{
+
+}
+
+#try_button{
 }
