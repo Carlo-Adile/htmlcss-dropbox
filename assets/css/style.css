@@ -198,7 +198,8 @@ p{
 
 #partner_image{
     display: flex;
-    flex-grow:1;
+    flex-wrap: wrap;
+    flex-grow:2;
 }
 
 #partner_image img{
@@ -211,8 +212,8 @@ p{
     flex-flow: column wrap;
     justify-content: space-around;
     align-self: center;
-    flex-grow:0.5;
-    height:60%;
+    flex-grow:1;
+/*     height:60%; */
     margin-left:1rem;
     margin-bottom:4rem;
 }
