@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    background-color: darkgray;
 }
 
 :root{
@@ -46,7 +47,7 @@ p{
 /* site header and elements */
 
 #site_header{
-    width:100vw;
+    width:100%;
 }
 
 #navigate{
@@ -70,7 +71,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .container{
@@ -199,7 +200,7 @@ p{
 #partner_image{
     display: flex;
     flex-wrap: wrap;
-    flex-grow:2;
+    width:55%;
 }
 
 #partner_image img{
@@ -212,8 +213,8 @@ p{
     flex-flow: column wrap;
     justify-content: space-around;
     align-self: center;
-    flex-grow:1;
-/*     height:60%; */
+    width:40%;
+    height:60%;
     margin-left:1rem;
     margin-bottom:4rem;
 }
@@ -239,4 +240,49 @@ p{
     flex-wrap: wrap;
     width:33%;
     height:200px;
+}
+
+/* clients section */
+
+#clients{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+/* brand section */
+
+#brands{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container_brand{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    min-height: 500px;
+    margin-bottom: 7rem;
+}
+
+#brand_grid{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.smaller{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow:1;
+}
+
+.bigger{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow:1;
+}
+
+#brand1{
+    background-color: red;
 }
