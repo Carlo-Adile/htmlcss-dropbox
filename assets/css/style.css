@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    background-color: darkgray;
+    /* background-color: darkgray; */
 }
 
 :root{
@@ -13,7 +13,7 @@
 /* debug class traces elements size in the screen */
 
 .debug{
-    border:1px solid black;
+    border:1px solid purple;
 }
 
 /* utilities */
@@ -332,14 +332,39 @@ p{
 /* question section */
 
 
-/* 
-.container{
+/* footer section */
+
+#site_footer{
+    position:relative;
     display: flex;
     flex-wrap: wrap;
-    align-content: center; 
-    width:50%;
-    min-height: 500px;
-    margin-bottom: 7rem;
+    justify-content: center;
+    background-color: black;
+    height:400px;
 }
 
-*/
+#footer_macro_container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width:60%;
+    height:100%;
+}
+
+.footer_column{
+    margin-top: 1rem;
+    color:white;
+    width:15%;
+}
+
+.footer_column ul{
+    list-style: none;
+    line-height: 2.5rem;
+}
+
+#language{
+    position:absolute;
+    bottom:10%;
+    left:20%;
+    color:grey;
+}
