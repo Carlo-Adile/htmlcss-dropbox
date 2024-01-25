@@ -8,11 +8,25 @@
     --buttons: #0061ff;
     --mainfont: 'Open Sans', sans-serif;
 }
-/* traces elements size in the screen */
 
-.debug{
+/* debug class traces elements size in the screen */
+
+/* .debug{
     border:1px solid black;
+} */
+
+/* utilities */
+
+p{
+    font-family: var(--mainfont);
 }
+
+.bigger_text{
+    font-size: 4rem;
+    font-weight:bold;
+}
+
+/* site header and elements */
 
 #site_header{
     width:100vw;
@@ -33,14 +47,76 @@
     font-family: var(--mainfont);
 }
 
-.header_text{
-
-}
-
 .button{
     background-color: var(--buttons);
     border-style:none;
-    border-radius:1px;
+    border-radius:2px;
     padding: 5px;
     color:white;
+}
+
+/* site main and other macro utilities */
+
+#site_main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+/* jumbotron and elements */
+
+#jumbotron{
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100vw;
+    height:550px;
+    background-color: var(--jumbotron);
+}
+
+#jumbo_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width:60%;
+    gap:2rem;
+}
+
+#jumbo_second{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 50%;
+}
+
+#jumbo_description{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 30%;
+    gap:1rem;
+}
+
+#jumbo_image{
+    max-width:60%;
+    max-height: 60%;
+}
+
+#jumbo_image img{
+    display: block;
+    width:120%;
+    overflow:visible;
+}
+
+#jumbo_button{
+    max-width:60%;
+}
+
+#jumbo_arrow{
+    position:absolute;
+    bottom:0%;
+    left:20%;
+    font-size:2rem;
 }
