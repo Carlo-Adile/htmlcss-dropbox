@@ -456,7 +456,7 @@ p{
 #footer_macro_container{
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width:60%;
     height:100%;
 }
@@ -469,12 +469,26 @@ p{
 
 .footer_column ul{
     list-style: none;
-    line-height: 2.5rem;
+    line-height: 2.rem;
+}
+
+.text_footer_s1{
+
 }
 
 #language{
     position:absolute;
-    bottom:10%;
+    bottom:20%;
     left:20%;
     color:grey;
 }
+
+
+/* .text_s3{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+.text_s4{
+    font-weight: bold;
+} */
