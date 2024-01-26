@@ -1,13 +1,20 @@
 *{
     margin:0;
     padding:0;
+    font-family: var(--mainfont);
     /* background-color: darkgray; */
+}
+
+ul{
+    list-style: none;
 }
 
 :root{
     --jumbotron: #b4d0ef;
     --buttons: #0061ff;
     --mainfont: 'Open Sans', sans-serif;
+    --greyfont: #c4c6d6;
+    --border:#e9e9ea;
 }
 
 /* debug class traces elements size in the screen */
@@ -16,15 +23,17 @@
     border:1px solid purple;
 }
 
-/* utilities */
+/* utilities and stylistic choices */
+
+u{
+    color:blue;
+}
 
 p{
     font-family: var(--mainfont);
 }
 
-.header_text{
-
-}
+/* text sizes */
 
 .bigger_text{
     font-size:2.5rem;
@@ -36,11 +45,28 @@ p{
     font-weight: bold;
 }
 
+.text_s3{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+.text_s4{
+    font-weight: bold;
+}
+
+.text_sm{
+    color:var(--greyfont);
+}
+
+.thight{
+    line-height:normal;
+}
+
 .button{
     background-color: var(--buttons);
     border-style:none;
     border-radius:2px;
-    padding: 5px;
+    padding: 0.5rem;
     color:white;
 }
 
@@ -85,6 +111,14 @@ p{
 
 .column{
     flex-direction: column;
+}
+
+.border{
+    border:1px solid var(--border);
+}
+
+.centered{
+    text-align: center;
 }
 
 /* jumbotron and elements */
@@ -158,22 +192,54 @@ p{
     font-size:2rem;
 }
 
-/* find your business section */
+/* find your business section with cards */
 
 #your_business{
     display: flex;
     flex-flow: column wrap;
 }
 
-.cards{
+.card_section{
     display: flex;
-    justify-content: center;
+    gap:1.5rem;
 }
 
 .card{
     width:calc((100%/12)*4);
     min-height: 600px;
+    min-width:200px;
 }
+
+.card div{
+    line-height:1.5rem;
+    margin-bottom:2rem;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.card p, li{
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.card li::before{
+    content:"\2713";
+    color:blue;
+    font-weight:bold;
+    margin:0.5rem 0.5rem 0 0;
+}
+
+.card i{
+    margin-right: 0.5rem;
+}
+
+.card hr{
+    margin-left:1.5rem;
+    border:1px solid var(--border);
+    width:25%;
+}
+
+
+
+
 
 .team{
     display: flex;
@@ -191,6 +257,12 @@ p{
     right:0%;
     top:0%;
 }
+
+
+
+
+
+
 
 /* partner section */
 
