@@ -54,6 +54,11 @@ p{
     font-family: var(--mainfont);
 }
 
+.img_fit{
+    display: block;
+    width: 100%;
+}
+
 /* text and button styles */
 
 .bigger_text{
@@ -229,7 +234,7 @@ p{
 
 .card p, li{
     max-width: 600px;;
-    margin: 0.75rem 0 0.75rem 0;
+    margin: 0.75rem 0 0 0;
 }
 
 .card li::before{
@@ -266,11 +271,6 @@ p{
     width:55%;
 }
 
-#partner_image img{
-    display: block;
-    width: 100%;
-}
-
 #partner_description{
     display: flex;
     flex-flow: column wrap;
@@ -278,32 +278,21 @@ p{
     align-self: center;
     width:40%;
     height:60%;
-    margin-left:1rem;
-    margin-bottom:4rem;
+    margin:0 0 4rem 1rem;
 }
 
 #partner_button{
     color:black;
-    border:1px solid black;
+    border:1.5px solid black;
     max-width: 40%;
-    padding:8px;
     background-color: transparent;
 }
 
-/* operation section */
 
-#operation_cards{
-    display: flex;
-    flex-wrap: wrap;
-    width:100%
-}
 
-.op_card{
-    display: flex;
-    flex-wrap: wrap;
-    width:33%;
-    height:200px;
-}
+/* fix from here */
+
+
 
 /* clients section */
 
