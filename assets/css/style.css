@@ -24,7 +24,6 @@
     flex-wrap: wrap;
     align-content: center; 
     width:56%;
-    min-height: 500px;
     margin-bottom: 7rem;
 }
 
@@ -299,6 +298,7 @@ p{
 #clients{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap:2rem;
 }
 
