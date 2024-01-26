@@ -9,9 +9,9 @@
     <title>Dropbox</title>
 </head>
 <body>
-    <header id="site_header" class="debug">
+    <header id="site_header">
         <div id="navigate">
-            <div class="navigate_part debug">
+            <div class="navigate_part">
                 <img src="./assets/img/logo-small.png" alt="">
                 <p class="header_text">
                     Perchè Dropbox
@@ -23,7 +23,7 @@
                     Piani e Prezzi
                 </p>
             </div>
-            <div class="navigate_part debug">
+            <div class="navigate_part">
                 <p class="header_text">
                     Supporto
                 </p>
@@ -40,18 +40,19 @@
         </div>
     </header>
     <main id="site_main">
-        <div id="jumbotron" class="margin debug">
-            <div id="jumbo_macro_container" class="debug">
+        <!-- jumbotron section -->
+        <div id="jumbotron">
+            <div id="jumbo_macro_container">
                 <!-- section1 for header text, section2 for description and image -->
-                <div id="jumbo_section1" class="debug">
-                    <div id="jumbo_header" class="debug">
+                <div id="jumbo_section1">
+                    <div id="jumbo_header">
                         <p id="jumbo_header_text">
                             Tutto ciò che ti serve per il lavoro, in un unico posto
                         </p>
                     </div>
                 </div>
                 <div id="jumbo_section2">
-                    <div id="jumbo_description" class="debug">
+                    <div id="jumbo_description">
                         <p class="regular_text">
                                 Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto, Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                         </p>
@@ -62,7 +63,7 @@
                                 Annulla in qualsiasi momento
                         </p>
                     </div>
-                    <div id="jumbo_image" class="debug">
+                    <div id="jumbo_image">
                         <img src="./assets/img/jumbo.png" alt="">
                     </div>
                 </div>
@@ -73,19 +74,22 @@
             </div>
         </div>
 
-        <!-- your business section -->
-        <section class="container debug column">
-            <div id="your_business">
-                <p class="bigger_text">
-                    Trova il piano business che fa per te
-                </p>
-                <form>
+        <!-- find your business section -->
+        <section class="container column">
+            <div>
+                <div class="business">
+                    <p class="bigger_text">
+                        Trova il piano business che fa per te
+                    </p>
+                </div>
+                <div class="business">
                     <input type="radio" name="" id="" value="monthly">
-                    <label for="monhtly">Fatturazione mensile</label><br>
+                    <label for="monhtly">Fatturazione mensile</label>
                     <input type="radio" name="" id="" value="yearly">
-                    <label for="monhtly">Fatturazione annuale</label><br>
-                </form>
+                    <label for="monhtly">Fatturazione annuale</label>
+                </div>
             </div>
+            <!-- vertical cards -->
             <div class="card_section">
                 <!-- professional -->
                 <div class="card border">
@@ -128,7 +132,7 @@
                 <!-- Advanced -->
                 <div class="card border">
                     <div class="border centered">
-                        <p><i class="fa-solid fa-user"></i>Team</p>
+                        <p><i class="fa-solid fa-users"></i>Team</p>
                     </div>
                     <div>
                         <p class="text_s3">
@@ -142,9 +146,9 @@
                         </p>
                     </div>
                     <div>
-                        <p class="thight"><i class="fa-solid fa-folder"></i>Tutto lo spazio di cui ha bisogno il tuo team</p>
                         <p class="thight"><i class="fa-solid fa-users"></i>3 o più utenti</p>
-                        <p class="thight"><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                        <p class="thight"><i class="fa-solid fa-folder"></i>Tutto lo spazio di cui ha bisogno il tuo team</p>
+                        <p class="thight"><i class="fa-solid fa-share-nodes"></i>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</p>
                     </div>
                     <div>
                         <button class="button">
@@ -158,37 +162,74 @@
                     <div>
                         <p class="text_s4">Punti salienti del piano</p>
                         <ul>
-                            <li>Invia file fino a 100 GB con Dropbox Transfert</li>
+                            <li>Nessun limite di spazio per i file</li>
                             <li>Cartelle offline su dispositivi mobili</li>
+                            <li>Risparmio del 50% rispetto alle iscrizioni singole</li>
+                            <li>Possibilità di inserire nuovi membri del team</li>
+                            <li>Gestione dei permessi in base ai ruoli</li>
                         </ul>
                     </div>
                 </div>
-                
-
-
-
-
-                <div class="card debug"></div>
+                <!-- Enterprise -->
+                <div class="card border">
+                    <div class="border centered">
+                        <p><i class="fa-solid fa-building"></i>Azienda</p>
+                    </div>
+                    <div>
+                        <p class="text_s3">
+                            Enterprise
+                        </p>
+                        <p class="text_s4">
+                            Contattaci
+                        </p>
+                        <p class="text_sm">
+                            -
+                        </p>
+                    </div>
+                    <div>
+                        <p class="thight"><i class="fa-solid fa-user"></i>10 o più utenti</p>
+                        <p class="thight"><i class="fa-solid fa-folder"></i>Soluzioni personalizzabili per la tua azienda</p>
+                        <p class="thight"><i class="fa-solid fa-share-nodes"></i>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</p>
+                    </div>
+                    <div>
+                        <button class="button">
+                            Contattaci
+                        </button>
+                        <p>
+                            oppure <u>acquista ora</u>
+                        </p>
+                    </div>
+                    <hr class="small_hr">
+                    <div>
+                        <p class="text_s4">Punti salienti del piano</p>
+                        <ul>
+                            <li>Cartelle offline su dispositivi mobili</li>
+                            <li>Servizio assistenza 24/h</li>
+                            <li>Possibilità di personalizzazione totale</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="team">
-                <p>
-                    Team
-                </p>
-                <div class="team1">
-                    <button class="button team_button">
-                        Contatta l'ufficio vendite
-                    </button>
-                    <p class="big_text">
-                        Enterprise
-                    </p>
-                    <p>
-                        Contatta l'ufficio vendite per i prezzi
-                    </p>
+            <!-- horizontal card -->
+            <div class="card big border">
+                <div class="border centered">
+                    <p><i class="fa-solid fa-building"></i>Team</p>
                 </div>
                 <div>
+                    <p class="text_s3">
+                        Enterprise
+                    </p>
+                    <p class="text_s4">
+                        Contatta l'ufficio vendite per i prezzi
+                    </p>
                     <p>
                         Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
                     </p>
+                </div>
+                <div>
+                    <button class="button">
+                        Contatta l'ufficio vendite
+                    </button>
                 </div>
             </div>
         </section>
