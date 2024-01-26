@@ -17,14 +17,13 @@
     border:1px solid purple;
 }
 
-
 /* macro utilities */
 
 .container{
     display: flex;
     flex-wrap: wrap;
     align-content: center; 
-    width:50%;
+    width:56%;
     min-height: 500px;
     margin-bottom: 7rem;
 }
@@ -88,7 +87,7 @@ p{
     background-color: var(--buttons);
     border-style:none;
     border-radius:2px;
-    padding: 0.5rem;
+    padding: 0.75rem;
     color:white;
 }
 
@@ -195,7 +194,7 @@ p{
 
 /* find your business section with cards */
 
-.business{
+.business_part{
     margin-top:2rem;
 }
 
@@ -215,10 +214,11 @@ p{
     width:100%;
 }
 
-.big button{
+#big_button{
+    width:250px;
     position: absolute;
     top:30%;
-    right:5%;
+    right:2.5%;
 }
 
 .card div{
@@ -229,7 +229,7 @@ p{
 
 .card p, li{
     max-width: 600px;;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.75rem 0 0.75rem 0;
 }
 
 .card li::before{
@@ -240,13 +240,18 @@ p{
 }
 
 .card i{
-    margin-right: 0.5rem;
+    display: inline;
+    margin-right:0.75rem;
 }
 
 .card hr{
     margin-left:1.5rem;
     border:1px solid var(--border);
     width:25%;
+}
+
+.card button{
+    width:100%;
 }
 
 /* partner section */
