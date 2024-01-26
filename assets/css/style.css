@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     align-content: center; 
     width:56%;
+    min-height:200px;
     margin-bottom: 7rem;
 }
 
@@ -415,9 +416,31 @@ p{
     color:black;
 }
 
-
 /* question section */
 
+#container_question{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width:56%;
+    min-height:300px;
+    margin: 7rem 0 7rem 0;
+}
+
+.question{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:75px;
+    border-top: 1px solid var(--maingrey);
+    border-bottom: 1px solid var(--maingrey);
+}
+
+.question i{
+    margin-right:2rem;
+}
 
 /* footer section */
 
